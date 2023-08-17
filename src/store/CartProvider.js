@@ -90,7 +90,7 @@ const CartProvider = (props) => {
     clearCart: clearCartHandler,
   };
   return (
-    <CartContext.Provider value={{ cartContext }}>
+    <CartContext.Provider value={cartContext}>
       {props.children}
     </CartContext.Provider>
   );
