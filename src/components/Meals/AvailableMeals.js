@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from "react";
 import classes from "./AvailableMeals.module.css";
-import CartProvider from "../../store/CartProvider";
+
 import Card from "../UI/Card";
+import MealItem from "./MealsItem/MealItem";
 const AvailableMeals = () => {
   const [meals, setMeals] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
