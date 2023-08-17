@@ -5,10 +5,16 @@ import CartProvider from "./store/CartProvider";
 const App = () => {
   const [cartIsShow, setCartIsShown] = useState(false);
 
-  const showCartHandler = () => {};
-  const hideCartHandler = () => {};
+  const showCartHandler = () => {
+    setCartIsShown(true);
+  };
+  const hideCartHandler = () => {
+    setCartIsShown(false);
+  };
 
-  return <CartProvider></CartProvider>;
+  return <CartProvider>
+    <Cart></Cart>
+  </CartProvider>;
 };
 
 export default App;
