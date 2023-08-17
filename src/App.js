@@ -1,10 +1,14 @@
+import { useState } from "react";
+import "./App.css";
+import CartProvider from "./store/CartProvider";
 
-import './App.css';
+const App = () => {
+  const [cartIsShow, setCartIsShown] = useState(false);
 
-function App() {
-  return (
-   <p></p>
-  );
-}
+  const showCartHandler = () => {};
+  const hideCartHandler = () => {};
+
+  return <CartProvider></CartProvider>;
+};
 
 export default App;
